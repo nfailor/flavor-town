@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{recipe.title}}</title>
+    <!-- Your CSS and other meta tags -->
+</head>
+<body>
+    <header>
+        <h1>{{recipe.title}}</h1>
+        <p>By {{recipe.author}}</p>
+    </header>
+    <main>
+        <section class="recipe-details">
+            <h2>Ingredients</h2>
+            <ul>
+                {{#each recipe.ingredients}}
+                    <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <h2>Instructions</h2>
+            <ol>
+                {{#each recipe.instructions}}
+                    <li>{{this}}</li>
+                {{/each}}
+            </ol>
+            <p>Preparation Time: {{recipe.prepTime}}</p>
+            <p>Cooking Time: {{recipe.cookTime}}</p>
+            <!-- Add more details about the recipe as needed -->
+        </section>
+        <aside class="recipe-image">
+            <img src="{{recipe.imageUrl}}" alt="{{recipe.title}} Image">
+        </aside>
+    </main>
+    <footer>
+        <!-- Footer content -->
+    </footer>
+    <!-- Your JavaScript and other scripts -->
+</body>
+</html>
