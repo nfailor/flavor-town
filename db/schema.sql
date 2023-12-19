@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS flavorTown_db;
+
+CREATE DATABASE flavorTown_db;
