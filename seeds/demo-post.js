@@ -30,32 +30,7 @@ const postdata = [
     title: 'Mango Tango Salsa',
     body: 'Mix ripe mangoes, tomatoes, and jalapeños for a zesty salsa that pairs perfectly with chips or grilled dishes.',
     user_id: 7,
-  },
-  {
-    title: 'Sweet and Savory Chicken',
-    body: 'Juicy grilled chicken marinated in a zesty blend of mango, lime, and chili, creating a tantalizing dance of sweet and spicy flavors',
-    user_id: 8,
-  },
-  {
-    title: 'Quinoa Salad Bowl',
-    body: 'A refreshing bowl of quinoa tossed with cherry tomatoes, cucumber, feta cheese, and kalamata olives, drizzled with a lemon-oregano vinaigrette.',
-    user_id: 9,
-  },
-  {
-    title: 'Savory Pancake Surprise',
-    body: 'Experiment with unexpected ingredients like cheese, spinach, and sun-dried tomatoes for a twist on traditional pancakes.',
-    user_id: 10,
-  },
-  {
-    title: 'Maple Dijon Glazed Salmon',
-    body: ' Succulent salmon fillets glazed with a harmonious mix of maple syrup and Dijon mustard, creating a perfect balance of sweet and tangy goodness.',
-    user_id: 11,
-  },
-  {
-    title: 'Thai Basil Beef Stir-Fry',
-    body: 'Tender strips of beef wok-fried with aromatic Thai basil, garlic, and chilies, delivering a burst of bold and savory Southeast Asian flavors.',
-    user_id: 12,
-  },
+  }
 ];
 
 const seedPost = () => Post.bulkCreate(postdata);
