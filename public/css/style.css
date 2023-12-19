@@ -1,0 +1,134 @@
+/* styles.css
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  } 
+   
+  /* Header Styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Nav Styles */
+   nav {
+    background-color: #444;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  /* Main Content Styles */
+  main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  aside {
+    flex: 1;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .blog-post {
+    flex: 3;
+    padding: 10px;
+    background-color: #fff;
+  } 
+  
+  /* Card Styles */
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+  
+  .card-header {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .card-body {
+    padding: 10px;
+  }
+  
+  /* Form Styles */
+  .form {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .form textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Button Styles */
+  .btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .btn-no-style {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: underline;
+  }
+  
+  /* Footer Styles */
+   footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+
+  
