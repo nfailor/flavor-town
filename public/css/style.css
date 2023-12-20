@@ -123,6 +123,20 @@ body {
     text-decoration: underline;
   }
   
+  .instructions p {
+    font-size: 2em;
+    font-weight: bold;
+    color: #3498db; /* Blue color */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .instructions p::before {
+    content: "\1F60E"; /* Emoji for sunglasses */
+    font-size: 1.5em;
+    margin-right: 10px;
+  }
+  
   /* Footer Styles */
    footer {
     background-color: #333;
