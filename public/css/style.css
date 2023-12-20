@@ -105,8 +105,9 @@ body {
   }
   
   .btn-primary {
-    background-color: #007bff;
+    background-color: transparent;
     color: #fff;
+    font-size: 1em;
   }
   
   .btn-danger {
@@ -129,6 +130,4 @@ body {
     text-align: center;
     padding: 20px;
   }
-  
-
   

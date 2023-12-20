@@ -1,8 +1,8 @@
 const newPostFormHandler = async function(event) {
     event.preventDefault();
 
-    const title = document.querySelector('input[name="postTitle"]').value;
-    const body = document.querySelector('textarea[name="postContent"]').value;
+    const title = document.querySelector('#recipeName').value;
+    const body = document.querySelector('#recipeContent').value;
 
     if (title && body) {
         await fetch('/api/posts', {

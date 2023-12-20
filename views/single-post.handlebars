@@ -1,18 +1,26 @@
 <div class="post">
   <article class="card">
-    <div class="card-header flex-row justify-space-between">
-      <h2>{{post.title}}</h2>
-      <div>
-        Posted by {{post.user.username}} on {{format_date post.createdAt}}
-      </div>
+    <header class="card-header">
+      <p class="card-header-title">
+        {{post.title}}
+      </p>
+    </header>
+    <div class="card-content">
+      <p class="title">
+        {{post.body}}
+      </p>
+      <p class="subtitle">
+        Posted by
+        <span class="mr-1">{{post.user.username}}</span>
+        on
+        <span>{{format_date post.createdAt}}</span>
+      </p>
     </div>
-    <div class="card-body">
-      {{post.body}}
-    </div>
-    {{#if isPostOwner}} <!-- Check if the logged-in user is the owner of the post -->
-      <a href="/edit-post/{{post.id}}" class="btn" id="editPostForm">Edit</a>
-      <input type="hidden" id="post-id" value="{{post.id}}">
+    {{#if isPostOwner}}
+      <footer class="card-footer">
+        <a href="/edit-post/{{post.id}}" class="btn" id="editPostForm">Edit</a>
         <button id="deletePostBtn" class="btn btn-danger">Delete Post</button>
+      </footer>
     {{/if}}
   </article>
 
@@ -29,7 +37,9 @@
               {{body}}
             </p>
             <p>
-              &mdash; {{user.username}}, {{format_date createdAt}}
+              &mdash;
+              {{user.username}},
+              {{format_date createdAt}}
             </p>
           </div>
         {{/each}}
@@ -52,7 +62,7 @@
       <button type="submit" class="btn">Submit</button>
     </div>
   </form>
-  
+
 </div>
 
 <script src="/js/comment.js"></script>

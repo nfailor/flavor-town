@@ -1,17 +1,22 @@
 <div class="posts">
   {{#each postInfo}}
-  <article class="card">
-    <div class="card-header flex-row justify-space-between">
-      <h2>
-        <a href="/blogpost/{{id}}">{{title}}</a>
-      </h2>
-      <div>
-        Posted by {{user.username}} on {{format_date createdAt}}
+    <article class="card">
+      <header class="card-header">
+        <p class="card-header-title">
+          <a href="/blogpost/{{id}}">{{title}}</a>
+        </p>
+      </header>
+      <div class="card-content">
+        <div class="content">
+          {{body}}
+        </div>
+        <p class="subtitle is-size-7">
+          Posted by
+          <span class="mr-1">{{user.username}}</span>
+          on
+          <span>{{format_date createdAt}}</span>
+        </p>
       </div>
-    </div>
-    <div class="card-body">
-      {{body}}
-    </div>
-  </article>
+    </article>
   {{/each}}
 </div>

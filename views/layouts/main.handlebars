@@ -1,38 +1,40 @@
-<!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flavor Town</title>
-    <link rel="stylesheet" type="text/css" href="/css/jass.css">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  </head>
 
-<body>
-  <header>
-    <h1>Welcome to Flavor Town!</h1>
-  </header>
-  <nav>
-    <a href="/">Home</a>
+  <body>
+    <header>
+      <h1>Welcome to Flavor Town!</h1>
+    </header>
+    <nav>
+      <a href="/">Home</a>
+      {{#if loggedIn}}
+        <button id="logout" class="btn btn-primary">Logout</button>
+        <a href="/dashboard">Dashboard</a>
+      {{else}}
+        <a href="/login">Login</a>
+      {{/if}}
+    </nav>
+    <main>
+      <aside>
+        <h2>Enjoy these delicious recipes!</h2>
+      </aside>
+      <div class="blog-post">
+        {{{body}}}
+      </div>
+    </main>
     {{#if loggedIn}}
-    <button id="logout" class="btn-no-style">Logout</button>
-    <a href="/dashboard">Dashboard</a>
-    {{else}}
-    <a href="/login">Login</a>
+      <script src="/js/logout.js"></script>
     {{/if}}
-  </nav>
-  <main>
-    <aside>
-      <h2>Enjoy these delicious recipes!</h2>
-    </aside>
-    <div class="blog-post">
-      {{{body}}}
-    </div>
-  </main>
-  {{#if loggedIn}}
-  <script src="/js/logout.js"></script>
-  {{/if}}
-</body>
+  </body>
 
 </html>
